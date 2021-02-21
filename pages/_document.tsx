@@ -1,4 +1,19 @@
-import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
+import Document, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentContext,
+} from 'next/document'
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      poml: any
+      scene: any
+    }
+  }
+}
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -14,8 +29,7 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-        <poml>
-        </poml>
+        <poml></poml>
       </Html>
     )
   }
