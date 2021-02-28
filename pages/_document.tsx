@@ -28,6 +28,9 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <a href="https://vercel.com/?utm_source=projectspirare&utm_campaign=oss">
+            <img src="/powered-by-vercel.svg" alt="powerd-by-vercel"/>
+          </a>
         </body>
         <poml></poml>
       </Html>
