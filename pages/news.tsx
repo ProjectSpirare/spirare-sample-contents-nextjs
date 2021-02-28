@@ -10,11 +10,13 @@ import { getNews } from '../lib/news'
 export default function News({ newsList }: { newsList: Article[] }) {
   console.log(newsList)
   return (
-    <scene>
-      {newsList.map((article: Article, index) => (
-        <Text text={article.title} position={`0 0 ${index * -0.1}`} a="a" />
-      ))}
-    </scene>
+    <poml>
+      <scene>
+        {newsList.map((article: Article, index) => (
+          <Text text={article.title} position={`0 0 ${index * -0.1}`} a="a" />
+        ))}
+      </scene>
+    </poml>
   )
 }
 
