@@ -27,10 +27,13 @@ class MyDocument extends Document {
         <Head />
         <body>
           <Main />
-          <NextScript />
+          <pre>
+            <code id="poml-text"/>
+          </pre>
           <a href="https://vercel.com/?utm_source=projectspirare&utm_campaign=oss">
             <img src="/powered-by-vercel.svg" alt="powerd-by-vercel"/>
           </a>
+          <NextScript />
         </body>
         <poml></poml>
       </Html>
